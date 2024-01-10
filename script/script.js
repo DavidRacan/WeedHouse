@@ -2,19 +2,19 @@ console.log(`Funguje!`);
 
 // 12. Zapojení prvků náhody pomocí matematických funkcí
 const randomNumber = Math.floor(Math.random() * 100) + 1;
-console.log(`Náhodné číslo: ${randomNumber}`);
+window.alert(`Náhodné číslo: ${randomNumber}`);
 
 // 13. Zacyklení událostí na základě daného počtu kroků
 const steps = 5; // Počet kroků
 for (let i = 0; i < steps; i++) {
-    console.log(`Krok číslo: ${i + 1}`);
+    window.alert(`Krok číslo: ${i + 1}`);
 }
 
 // 14. Zacyklení událostí na základě výstupní podmínky
 let count = 0;
 const maxCount = 3;
 while (count < maxCount) {
-    console.log(`Stále podmínka: ${count}`);
+   window.alert(`Stále podmínka: ${count}`);
     count++;
 }
 
@@ -41,6 +41,6 @@ window.alert(message);
 
 // 16. Rozšíření vybraných proměnných na pole
 const creators = ['Džon', 'Advy', 'Dejvis'];
-console.log(`Tvůrci: ${creators.join(', ')}`);
+window.alert(`Tvůrci: ${creators.join(', ')}`);
 
 console.log(`Rare jako supreme drop`);
