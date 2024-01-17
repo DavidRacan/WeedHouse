@@ -44,3 +44,18 @@ const creators = ['Džon', 'Advy', 'Dejvis'];
 window.alert(`Tvůrci: ${creators.join(', ')}`);
 
 console.log(`Rare jako supreme drop`);
+const studenti = ['Anna', 'Kateřina', 'Marie', 'Pepa'];
+studenti.forEach(element => {
+  studenti[studenti.indexOf(element)] = element.substring(0, 3) + 'ítko';
+});
+let vybraniStudenti = [];
+
+do {
+  const los = Math.floor(Math.random() * studenti.length);
+  const vybranyStudent = studenti[los];
+  if (!vybraniStudenti.includes(vybranyStudent)) {
+    window.alert(`Dnešním mazánkem je: ${vybranyStudent}`);
+    vybraniStudenti.push(vybranyStudent);
+  }
+} while (vybraniStudenti.length < 3);
+window.alert(`Dnešní mazánci jsou: ${vybraniStudenti.join(', ')}.`);
