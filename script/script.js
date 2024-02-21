@@ -53,27 +53,6 @@ studenti.forEach(element => {
 });
 let vybraniStudenti = [];
 
-const hody = Number(window.prompt('Kolikrát chceš hodit kostkou?'));
-const strany = Number(window.prompt('Kolikastěnnou kostkou chceš házet?'));
-
-if (hody >= 1 && (strany === 6 || strany === 20)) {
-    // Volba 6stěnné kostky
-    if (strany === 6) {
-        for (let i = 0; i < hody; i++) {
-            const vysledek = hod6();
-            window.alert(`Na 6stěnné kostce padlo číslo ${vysledek}.`);
-        }
-    }
-    // Volba 20stěnné kostky
-    else if (strany === 20) {
-        for (let i = 0; i < hody; i++) {
-            const vysledek = hod20();
-            window.alert(`Na 20stěnné kostce padlo číslo ${vysledek}.`);
-        }
-    }
-} else {
-    window.alert('Neplatný počet hodů nebo nepodporovaný počet stran');
-}
 
 do {
     const los = Math.floor(Math.random() * studenti.length);
