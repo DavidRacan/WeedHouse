@@ -39,19 +39,12 @@ function checkAge(age) {
     }
 }
 
-const vekUzivatele = window.prompt('Kolik ti je let?', 69);
-const message = checkAge(vekUzivatele);
-window.alert(message);
+
 
 const creators = ['Džon', 'Advy', 'Dejvis'];
 window.alert(`Tvůrci: ${creators.join(', ')}`);
 
 console.log(`Rare jako supreme drop`);
-const studenti = ['Anna', 'Kateřina', 'Marie', 'Pepa'];
-studenti.forEach(element => {
-    studenti[studenti.indexOf(element)] = element.substring(0, 3) + 'ítko';
-});
-let vybraniStudenti = [];
 
 
 do {
